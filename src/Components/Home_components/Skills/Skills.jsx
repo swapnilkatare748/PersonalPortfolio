@@ -170,7 +170,7 @@ const Skills = () => {
         </ul>
       </div>
     </section>
-  );
+  ); 
 };
 
 const SkillCard = ({ tooltip, imageSrc, altText }) => {

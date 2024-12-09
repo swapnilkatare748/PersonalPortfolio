@@ -15,11 +15,13 @@ function Navbar() {
     setIsThemeActive(!isThemeActive);
 
     if (!isThemeActive) {
-      document.body.classList.remove(styles.light_theme);
-      document.body.classList.add(styles.dark_theme);
-    } else {
       document.body.classList.remove(styles.dark_theme);
       document.body.classList.add(styles.light_theme);
+    } else {
+
+      document.body.classList.remove(styles.light_theme);
+      document.body.classList.add(styles.dark_theme);
+     
     }
   };
 
