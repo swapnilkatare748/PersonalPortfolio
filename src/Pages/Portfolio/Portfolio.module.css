@@ -1,0 +1,10 @@
+.Portfolio{
+    padding: 4em;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .Portfolio{
+        padding: 1em;
+    }
+}

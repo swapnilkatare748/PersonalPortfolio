@@ -1,0 +1,211 @@
+.project { padding-block: var(--section-padding); }
+
+.projectList > li { margin-bottom: 25px; }
+
+
+.projectCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-12);
+  box-shadow: 2px 4px 6px hsla(0, 0%, 0%, 0.2);
+}
+.cardContent{
+  padding: 10px;
+}
+.projectCard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  transition: var(--transition-1);
+}
+
+.projectCard:is(:hover, :focus)::after {
+  background: hsla(0, 0%, 100%, 0.1);
+  backdrop-filter: blur(0.5px);
+}
+
+.projectCard .card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+.projectCard .card-title { margin-bottom: 10px; }
+
+.projectCard :is(.card-title, .publishDate) {
+  background: var(--bg-primary);
+  padding: 6px 12px;
+  width: max-content;
+  box-shadow: var(--shadow-1);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: var(--transition-1);
+}
+
+.projectCard .publishDate {
+  font-size: var(--fs-6);
+  color: var(--color-primary);
+  transition-delay: 0s;
+}
+
+.projectCard:is(:hover, :focus) :is(.card-title, .publishDate) {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.projectCard:is(:hover, :focus) .publishDate { transition-delay: 0.1s; }
+
+.loadMore {
+  font-size: var(--fs-4);
+  color: var(--raw-seinna);
+  text-decoration: underline;
+  margin-inline: auto;
+}
+@media (min-width: 550px) {
+
+    .projectList {
+        column-count: 2;
+        column-gap: 25px;
+      }
+    
+      .projectList > li:first-child { column-span: all; }
+    
+    }
+
+    .projectList { column-count: 3; }
+   
+    @media (min-width: 992px) {
+
+    .container { max-width: 980px; }
+
+    .projectList > li:first-child {
+      column-span: unset;
+      margin: 25px;
+      margin-left: 0;
+    }
+}
+
+ 
+.h1 {
+    font-size: var(--fs-1);
+    line-height: 1.2;
+    font-weight: 400;
+  }
+  
+  .h2,
+  .h3,
+  .h4 {
+    color: var(--color-primary);
+    font-family: var(--ff-poppins);
+    line-height: 1.2;
+  }
+  
+  .h2 { font-size: var(--fs-2); }
+  
+  .h3 { font-size: var(--fs-3); }
+  
+  .h4 { font-size: var(--fs-5); }
+  
+  .w-100 { width: 100%; }
+  
+  .btn {
+    max-width: max-content;
+    color: var(--color-primary);
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 10px 25px;
+    border: 1px solid transparent;
+    border-radius: var(--radius-4);
+    transition: var(--transition-1);
+  }
+  
+  .btnPrimary { border-color: var(--color-primary); }
+  
+  .btnPrimary:is(:hover, :focus) {
+    background: var(--color-primary);
+    color: var(--bg-primary);
+  }
+  
+  .btnSecondary {
+    background: var(--raw-seinna);
+    border-color: var(--raw-seinna);
+    color: var(--black);
+  }
+  
+  .btnSecondary:is(:hover, :focus) { --raw-seinna: hsl(24, 74%, 64%); }
+  
+  .sectionSubtitle {
+    position: relative;
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .sectionSubtitle::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: var(--color-secondary);
+  }
+  
+  .sectionTitle {
+    max-width: 350px;
+    margin-bottom: 30px;
+  }
+  
+  .sectionText{
+    color: var(--color-secondary);
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: -40px;
+    background: var(--raw-seinna);
+    min-width: max-content;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: var(--fw-700);
+    padding: 5px 10px;
+    border-radius: var(--radius-4);
+    box-shadow: var(--shadow-1);
+    transform: translateY(-10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition-1);
+    z-index: 1;
+  }
+  
+
+  @media only screen and (max-width: 768px) {
+  
+    .projectList{
+      display: flex;
+      flex-direction: column;
+      flex: wrap;
+    
+    }
+    .projectList > li{
+      width: 95%;
+    }
+
+}
+@media only screen and (max-width: 967px) {
+
+  .projectList{
+    display: flex;
+    flex-direction: column;
+    flex: wrap;
+    align-items: center;
+  }
+ 
+}
