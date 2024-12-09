@@ -24,7 +24,11 @@ function Navbar() {
      
     }
   };
-
+  window.onload = () => {
+    const element = document.getElementById("ul");
+    element.classList.add('slide');
+  };
+  
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -56,7 +60,7 @@ function Navbar() {
         </h1>
 
         <div className={styles.navbarVisible}>
-          <ul>
+          <ul id="ul">
             <li>
               <Link to={"/"} className={styles.navbarLink}>
                 Home
@@ -116,7 +120,7 @@ function Navbar() {
           <span className={styles.two}></span>
           <span className={styles.three}></span>
         </button>
-
+  
         <nav
           className={`${styles.navbar} ${
             isNavbarActive ? styles.active : ""

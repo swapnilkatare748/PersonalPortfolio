@@ -101,6 +101,7 @@ const Contact = () => {
                   required
                   placeholder={placeholder}
                   className={styles.inputField}
+                
                 />
               )}
 

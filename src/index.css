@@ -103,6 +103,7 @@ body::-webkit-scrollbar {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+ 
   }
   
   li { list-style: none; }
@@ -155,6 +156,7 @@ body::-webkit-scrollbar {
   body {
     background: var(--bg-primary);
     transition: var(--transition-1);
+    scroll-behavior: smooth;
   }
   
   body.active { overflow: hidden; }
@@ -268,7 +270,8 @@ body::-webkit-scrollbar {
     transition: var(--transition-1);
     z-index: 1;
   }
-  
+ 
+ 
  
   
 
