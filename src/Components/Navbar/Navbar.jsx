@@ -46,6 +46,35 @@ function Navbar() {
     };
   }, []);
 
+
+  //nav bar animation
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const navbar = document.querySelector(".navbar");
+    const navbarLinks = document.querySelectorAll(".navbarLink");
+  
+    // Add the 'active' class on page load
+    setTimeout(() => {
+      navbar.classList.add("active");
+    }, 100); // Delay for smooth animation after page load
+  
+    // Re-apply the animation on window resize
+    window.addEventListener("resize", () => {
+      navbar.classList.remove("active");
+      navbarLinks.forEach((link) => {
+        link.style.transition = "none"; // Remove transition temporarily
+      });
+  
+      setTimeout(() => {
+        navbarLinks.forEach((link) => {
+          link.style.transition = ""; // Reset transition
+        });
+        navbar.classList.add("active");
+      }, 100); // Re-apply with a slight delay for smoothness
+    });
+  });
+  
+
   return (
     <header
       className={`${styles.header} ${

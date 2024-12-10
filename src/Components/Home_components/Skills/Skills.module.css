@@ -64,6 +64,21 @@
   }
   
   .skillsBox {
+    display: flex;
+    flex-wrap: wrap;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 1;
+    transform: scale(1);
+    animation:fadeIn 0.2s ;
+  }
+  
+  .skillsBox.hidden {
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
+  }
+
+  /* .skillsBox {
     display: block;
     transition: 1s;
     
@@ -72,7 +87,7 @@
   .skillsBox.active {
     display: block;
    
-  }
+  } */
   
   
   .skillsList,
@@ -83,7 +98,8 @@
     align-items: center;
     transform: 1s;
     gap: 15px;
-    animation: fadeIn 0.5s ease-out forwards;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    animation: fadeIn 0.2s ease-in ;
   }
   .skillCard_li{
     width: auto;
@@ -246,7 +262,7 @@
   }
   
   .btnSecondary:is(:hover, :focus) { --raw-seinna: hsl(24, 74%, 64%); }
-
+ 
   .toolsList {
     display: flex;
     flex-wrap: wrap;
@@ -254,3 +270,8 @@
     align-items: center;
     gap: 15px;
   }
+
+
+
+
+ 

@@ -95,7 +95,7 @@ const Contact = () => {
                 ></textarea>
               ) : (
                 <input
-                  type={type}
+                   type={type}
                   name={id}
                   id={id}
                   required
@@ -108,7 +108,7 @@ const Contact = () => {
             </div>
           </div>
         ))}
-        <button type="submit" className={`${styles.btn} ${styles.btnPrimary}`}>
+        <button type="submit" className={`${styles.btn} ${styles.btnPrimary} ${styles.effect}`}>
           Send
         </button>
       </form>

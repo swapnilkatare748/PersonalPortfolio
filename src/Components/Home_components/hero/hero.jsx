@@ -34,7 +34,7 @@ function hero() {
           Get in touch
         </a>
       </div>
-
+ 
       <ul className={styles.heroSocialList}>
         <li>
           <a href="#" className={styles.heroSocialLink}>

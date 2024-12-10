@@ -109,8 +109,8 @@
   .heroSocialList {
     display: block;
     position: absolute;
-    bottom: 92px;
-    left: -30px;
+    bottom: 40px;
+    left: 16px;
   }
 
   .heroSocialList::after {
@@ -125,8 +125,8 @@
 
   .heroSocialLink {
     position: relative;
-    /* color: var(--color-secondary); */
-    color: white;
+    color: var(--color-secondary);
+    /* color: white; */
     margin-block: 5px;
     padding: 5px;
     font-size: 18px;

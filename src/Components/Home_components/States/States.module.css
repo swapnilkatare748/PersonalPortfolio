@@ -41,11 +41,16 @@
     color: var(--raw-seinna);
     text-align: center;
   }
+  .cardTitle span{
+    font-size: 2em;
+  }
+
+
   
   .cardTitle strong {
     display: block;
     color: var(--color-primary);
-    font-size: initial;
+    font-size: large;
     line-height: 1.3;
     margin-top: 5px;
   }

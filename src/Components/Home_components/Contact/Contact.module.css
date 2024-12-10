@@ -150,11 +150,14 @@
   
   .contact .btnPrimary {
     max-width: unset;
+    
     width: 100%;
     background: var(--color-primary);
     color: var(--bg-primary);
   }
-
+ 
+ 
+ 
 
   @media (min-width: 768px) {
     .contactForm {
@@ -452,7 +455,7 @@
     z-index: 1;
   }
   
- 
+
   
 
 

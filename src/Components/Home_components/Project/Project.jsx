@@ -7,7 +7,7 @@ import img4 from "../../../assets/images/project-4.png";
 import img5 from "../../../assets/images/project-5.png";
 import img6 from "../../../assets/images/project-6.png";
 import img7 from "../../../assets/images/project-7.png";
-
+  
 const Projects = () => {
   // Array to store project image imports
   const images = [img1, img2, img3, img4, img5, img6, img7];

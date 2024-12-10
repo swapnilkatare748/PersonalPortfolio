@@ -33,6 +33,13 @@ const Skills = () => {
     setIsSkillsActive((prev) => !prev);
   };
 
+
+  const skillsList = document.querySelector('.skillsList');
+const toolsList = document.querySelector('.toolsList');
+
+// Example: Toggling between active and hidden states
+
+
  
 
   return (

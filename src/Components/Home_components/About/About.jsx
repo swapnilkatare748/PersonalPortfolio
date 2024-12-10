@@ -18,7 +18,7 @@ function About() {
 
         <h2 className={`${styles.sectionTitle} h3 `}>
           Need a Creative Product? I can Help You!
-        </h2>
+        </h2>  
 
         <p className={styles.sectionText}>
           Hi! I’m Jack Reacher, and I’m a developer who has passion for building clean web applications with intuitive
